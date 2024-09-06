@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>User Information</legend>
+            
+            <!-- Username Field (Required, Alphabets Only, Max Length 5, Autofocus) -->
+   <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" pattern="[A-Za-z]{1,5}" title="Only alphabets are allowed, max 5 characters" maxlength="5" required autofocus>
+  </div>          
+            
+            <!-- Password Field (Required) -->
+   <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+  </div>          
+            
+            <!-- Upload Field (Images only) -->
+    <div>
+            <label for="upload">Upload Image:</label>
+            <input type="file" id="upload" name="upload" accept=".png, .jpg, .jpeg">
+   </div>         
+            
+            <!-- Gender Radio Buttons (Required, Default: Male) -->
+  <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+  </div>         
+            
+            <!-- Occupation Select Field -->
+    <div>
+            <label for="occupation">Occupation:</label>
+            <select id="occupation" name="occupation">
+                <option value="student">Student</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="analyst">Analyst</option>
+            </select>
+    </div>
+         
+            <!-- Email Field (Required, Autocomplete) -->
+     <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            
+    </div>
+    
+    
+          
+            <!-- Phone Number Field (Required, Numbers Only, Max Length 11) -->
+    <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{1,11}" title="Only numbers are allowed, max 11 digits" maxlength="11" required>
+    </div>
+            
+   <div>         
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+            
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
